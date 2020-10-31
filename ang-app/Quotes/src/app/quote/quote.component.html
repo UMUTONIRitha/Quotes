@@ -4,7 +4,7 @@
   <div *ngFor='let quote of quotes;let i = index'>
     <li>{{quote.name}}  due on {{quote.completeDate|date|uppercase}}</li>
     <button (click)='toggleDetails(i)'>see the Author</button>
-    <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
+    <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
   </div>
 </ul>
-<p *ngIf='quotes.length > 5'>You have too many goals</p>
+<p *ngIf='quotes.length > 5'>You have too many quote</p>
