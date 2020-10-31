@@ -3,6 +3,9 @@
 <hr>
 <div class="row">
     <div class="col-md-6">
+        <app-quote-form></app-quote-form>
+      </div>
+    <div class="col-md-6">
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
     <li>{{quote.name}}  due on {{quote.completeDate|date|uppercase}}</li>
@@ -11,6 +14,7 @@
   </div>
 </ul>
     </div>
+    
 </div>
 <p *ngIf='quotes.length > 5'>You have too many quote</p>
 </div>
