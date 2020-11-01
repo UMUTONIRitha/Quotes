@@ -1,5 +1,14 @@
 # Quotes
 
+#### By **{UMUTONI Marie Ritha}**
+
+## Description
+
+{Love Quotes Project is a web platform which help you to add quotes,delete quote and like or unlike quote . }
+### License
+
+* MIT license,Copyright (c) {2020} **{UMUTONI Marie Ritha}**
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Development server
