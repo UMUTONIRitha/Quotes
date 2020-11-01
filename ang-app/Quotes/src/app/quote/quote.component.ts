@@ -12,7 +12,7 @@ export class QuoteComponent implements OnInit {
    new Quote(2,"You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth",'William W. Purkey','Zilfa',0,0,new Date(2005,5,24)),
     new Quote(3,"You know you're in love when you can't fall asleep because reality is finally better than your dreams",'Dr. Seuss','Ritha',0,0,new Date(2010,3,14)),
     new Quote(4,"A friend is someone who knows all about you and still loves you.",'Elbert Hubbard','Ritha',0,0,new Date(1998,4,30)),
-   new Quote(5,"We accept the love we think we deserve.",'Stephen Chbosky, The Perks of Being a Wallflower','Ritha',0,0,new Date(2002,10,14)),
+   new Quote(5,"We accept the love we think we deserve.",'Stephen Chbosky, The Perks of Being a Wallflower','Ritha',0,0,new Date(1998,9,31)),
   ];
   toggleDetails(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
