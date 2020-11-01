@@ -1,6 +1,9 @@
 <p>
     {{quote.author}}
   </p>
+  <p>
+    {{quote.publisher}}
+  </p>
   
-  <p>This quote will be complete in {{quote.completeDate|dateCount}} days</p>
+  <p>This quote was published {{quote.completeDate|dateCount}} days ago</p>
   <button (click)= 'goalDelete(true)'class="btn btn-outline-danger">Delete quote </button>
