@@ -8,11 +8,11 @@ import { Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
-    new Quote(1,'The greatest glory in living lies not in never falling, but in rising every time we fall.','Nelson Mandela','Ritha',new Date(2020,3,14)),
-   new Quote(2,'The way to get started is to quit talking and begin doing.','Walt Disney','Zilfa',new Date(2005,5,24)),
-    new Quote(3,'If life were predictable it would cease to be life, and be without flavor.','Eleanor Roosevelt','Ritha',new Date(2010,3,14)),
-    new Quote(4,"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.",'Steve Jobs','Ritha',new Date(1998,4,30)),
-   new Quote(5,"Life is what happens when you're busy making other plans.",'John Lennon','Ritha',new Date(2002,10,14)),
+    new Quote(1,"I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.",'Marilyn Monroe','Ritha',0,0,new Date(2020,3,14)),
+   new Quote(2,"You've gotta dance like there's nobody watching,Love like you'll never be hurt,Sing like there's nobody listening,And live like it's heaven on earth",'William W. Purkey','Zilfa',0,0,new Date(2005,5,24)),
+    new Quote(3,"You know you're in love when you can't fall asleep because reality is finally better than your dreams",'Dr. Seuss','Ritha',0,0,new Date(2010,3,14)),
+    new Quote(4,"A friend is someone who knows all about you and still loves you.",'Elbert Hubbard','Ritha',0,0,new Date(1998,4,30)),
+   new Quote(5,"We accept the love we think we deserve.",'Stephen Chbosky, The Perks of Being a Wallflower','Ritha',0,0,new Date(2002,10,14)),
   ];
   toggleDetails(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
