@@ -9,11 +9,10 @@ import { Quote} from '../quote';
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
     new Quote(1,'The greatest glory in living lies not in never falling, but in rising every time we fall.','Nelson Mandela','Ritha',new Date(2020,3,14)),
-   new Quote(2,'The way to get started is to quit talking and begin doing.','Walt Disney','Zilfa',new Date(2025,5,24)),
-    new Quote(3,'If life were predictable it would cease to be life, and be without flavor.','Eleanor Roosevelt','Ritha',new Date(2030,3,14)),
+   new Quote(2,'The way to get started is to quit talking and begin doing.','Walt Disney','Zilfa',new Date(2005,5,24)),
+    new Quote(3,'If life were predictable it would cease to be life, and be without flavor.','Eleanor Roosevelt','Ritha',new Date(2010,3,14)),
     new Quote(4,"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.",'Steve Jobs','Ritha',new Date(1998,4,30)),
-    new Quote(5,"If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.",'Oprah Winfrey','Zilfa',new Date(2002,9,4)),
-   new Quote(6,"Life is what happens when you're busy making other plans.",'John Lennon','Ritha',new Date(2020,10,14)),
+   new Quote(5,"Life is what happens when you're busy making other plans.",'John Lennon','Ritha',new Date(2002,10,14)),
   ];
   toggleDetails(index){
     this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
