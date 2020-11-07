@@ -7,7 +7,7 @@ import{User} from '../user';
 })
 export class UserService {
 user:User;
-  constructor(private HttpClient) { 
+  constructor(private http:HttpClient) { 
     this.user=new User("","",0,0,0,"");
   }
   userRequest(userName){
@@ -15,7 +15,7 @@ user:User;
     interface ApiResponse{
       avatar_url:string;
       name:string;
-      repo:number;
+      public_repos:number;
       followers:number;
       following:number;
       html_url:string;
@@ -24,7 +24,7 @@ user:User;
       this.http.get<ApiResponse>("https://https://api.github.com/users/" + userInput +"ec315b05b4dec58f222abb17eafd0ba09ab23632").toPromise().then(response=>{
         this.user.avatar_url=response.avatar_url
         this.user.name=response.name
-        this.user.repo=response.repo
+        this.user.public_repos=response.public_repos
         this.user.followers=response.followers
         this.user.following=response.following
         this.user.html_url=response.html_url
@@ -33,7 +33,7 @@ user:User;
       error=>{
         this.user.avatar_url=""
         this.user.name=""
-        this.user.repo=0
+        this.user.public_repos=0
         this.user.followers=0
         this.user.following=0
         this.user.html_url=""
