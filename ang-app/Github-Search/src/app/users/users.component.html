@@ -1,1 +1,18 @@
-<p>users works!</p>
+<div class="container-fluid">
+   <!-- <app-user-search-form (submitRepo)="submitrepo($event)"></app-user-search-form>-->
+   <div class="container">
+    <form>
+        <input class="form-control" type="text" placeholder="Please enter github username" name="userName" [(ngModel)]="userName">
+    <button class="btn btn-outline-primary" (click)="submitRepos()"><i class="fa fa-search" aria-hidden="true"></i>Search</button>
+    </form>
+    </div>
+    
+   <div>
+   <img src="{{user.avatar_url}}" alt="">
+</div>
+<p><span>full names:</span>{{user.name}}</p>
+<p> <span >repositories:</span>{{user.public_repos}}</p>
+<p> <span>followers:</span> {{user.followers}}</p>
+<p><span>following:</span> {{user.following}}</p>
+<p><a href="user.html_url" target="_blank">link to github</a></p>
+</div>
