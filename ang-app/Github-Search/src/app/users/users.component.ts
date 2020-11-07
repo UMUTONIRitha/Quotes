@@ -11,11 +11,14 @@ export class UsersComponent implements OnInit {
 user:User;
 userName="";
 submitRepos(){
-
+this.userService.userRequest(this.userName)
+console.log(this.userName)
 }
-  constructor() { }
+  constructor(private userService:UserService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.userService.userRequest("UMUTONIRitha")
+    this.user=this.userService.user
   }
 
 }
