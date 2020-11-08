@@ -12,8 +12,8 @@ user:User;
   constructor(private http:HttpClient) { 
     this.user=new User("","",0,0,0,"");
   }
-  userRequest(userName){
-    var userInput=userName
+  userRequest(githubUserName){
+    var userName=githubUserName
     interface ApiResponse{
       avatar_url:string;
       name:string;
@@ -23,7 +23,7 @@ user:User;
       html_url:string;
     }
     let promise = new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>("https://api.github.com/users/" + userInput +"?access_token=ec315b05b4dec58f222abb17eafd0ba09ab23632").toPromise().then(response=>{
+      this.http.get<ApiResponse>("https://api.github.com/users/" + userName +"?access_token=ec315b05b4dec58f222abb17eafd0ba09ab23632").toPromise().then(response=>{
         this.user.avatar_url=response.avatar_url
         this.user.name=response.name
         this.user.public_repos=response.public_repos

@@ -6,15 +6,13 @@ import { Component, OnInit ,Input,Output,EventEmitter} from '@angular/core';
   styleUrls: ['./user-search-form.component.css']
 })
 export class UserSearchFormComponent implements OnInit {
-userName:string;
-@Output() submitrepo=new EventEmitter<any>()
+
+@Output() searchOutput=new EventEmitter<any>()
   constructor() { }
 
   ngOnInit() {
   }
-  search(){
-    this.submitrepo.emit(this.userName);
-    this.userName="";
+  
   }
 
-}
+
