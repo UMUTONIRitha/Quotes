@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import {environment } from '../../environments/environment';
+
 import{User} from '../user';
 
 @Injectable({
@@ -21,7 +23,7 @@ user:User;
       html_url:string;
     }
     let promise = new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>("https://https://api.github.com/users/" + userInput +"ec315b05b4dec58f222abb17eafd0ba09ab23632").toPromise().then(response=>{
+      this.http.get<ApiResponse>("https://api.github.com/users/" + userInput +"?access_token=ec315b05b4dec58f222abb17eafd0ba09ab23632").toPromise().then(response=>{
         this.user.avatar_url=response.avatar_url
         this.user.name=response.name
         this.user.public_repos=response.public_repos
