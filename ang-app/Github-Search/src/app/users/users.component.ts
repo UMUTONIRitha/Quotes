@@ -10,10 +10,10 @@ import { UserService } from '../user-service/user.service';
 })
 export class UsersComponent implements OnInit {
 user:User;
-userName="";
-submitRepos(){
-this.userService.userRequest(this.userName)
-console.log(this.userName)
+githubUserName="";
+searchUser(){
+this.userService.userRequest(this.githubUserName)
+console.log(this.githubUserName)
 }
   constructor(private userService:UserService) { }
 
