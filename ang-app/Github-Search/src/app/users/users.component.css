@@ -14,3 +14,6 @@ img{
     height: 300px;
     margin-left: 80px;
 }
+.nav-item nav-link{
+    color: black;
+}
