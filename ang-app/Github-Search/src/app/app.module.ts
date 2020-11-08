@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { UserSearchFormComponent } from './user-search-form/user-search-form.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { UserSearchFormComponent } from './user-search-form/user-search-form.com
     AppComponent,
     UsersComponent,
     UserSearchFormComponent,
+    HighlightDirective,
 
   ],
   imports: [
