@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { UserSearchFormComponent } from './user-search-form/user-search-form.component';
 import { HighlightDirective } from './highlight.directive';
+import { RepositoryComponent } from './repository/repository.component';
+import { AboutGithubComponent } from './about-github/about-github.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -16,6 +19,9 @@ import { HighlightDirective } from './highlight.directive';
     UsersComponent,
     UserSearchFormComponent,
     HighlightDirective,
+    RepositoryComponent,
+    AboutGithubComponent,
+    NavbarComponent,
 
   ],
   imports: [
