@@ -4,12 +4,17 @@
 
 body{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTCfpasLagF5aIXVv3HCwnWmqLhYFP5BTi8cw&usqp=CAU");
-color: white;
+color:white;
 background-repeat: no-repeat;
 background-size: cover;
 font-family: 'Inconsolata', monospace;
 
 }
-
+#one{
+    color: black;
+}
+#two{
+    color: black;
+}
 
 
